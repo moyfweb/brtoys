@@ -1,0 +1,15 @@
+#contato input[type=text], #contato select , #contato textarea{border:1px solid #aaa;width: 400px;padding: 3px 5px;resize: none;}
+#contato select {width: 410px;}
+#contato label {text-align:left;margin:5px 10px 0 0;display: block;font-size: 1.1em;color: #555;letter-spacing: 1px;}
+#contato input[type=submit] {text-align: center; float: right; margin: 10px 20px 0 0;padding: 2px;width: 120px; font-size: 1.1em; background: #e0e0e0;border: 1px solid gray;}
+
+#contato label.error, #contato  div.error {margin: 0px 0px 5px 0px;color: #900;}
+#contato input[type=text].error,
+#contato select.error,
+#contato textarea.error,
+#contato div.error
+{background: #fee;}
+#summary {color: #d22;text-align:center;}
+#contato div.error {width: 100%;display: block;}
+#contato span.erro {margin: 0px 0px -2px 20px;font-size: 0.8em;}
+#contato span.erro label.error {font-weight: normal;display: inline-block;*display: inline;zoom: 1;margin: 0px 0px 0px 0px;}

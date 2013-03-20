@@ -1,0 +1,37 @@
+.:LOJA VIRTUAL:.
+
+
+#ADMIN#
+Alterar Senha
+
+Painel de Usuarios
+	Criar | Listar | Editar | Visualizar
+		Editar->
+	
+Painel de Clientes
+	Criar | Listar | Editar | Compras
+		Visualizar -> Compras Filtro (Lista com botões abre modal)
+			Canceladas | Em Andamento | Finalizadas 
+			
+Painel de Produtos
+	Criar tipo | Criar Subcategoria | Criar | Listar | Editar | Visualizar 
+	
+Painel de Compras
+	Listar | Editar | Confirmar | Visualizar
+
+Painel de Conteudo
+	Listar | Editar | Confirmar | Visualizar
+	
+Painel de Relatórios
+	****
+
+Login
+	Login | Recuperar Senha
+	****
+
+Log Admin
+	UMA LISTA COM FILTROS "Usuario, Ação, Data e Hora"
+		
+Log Cliente
+	UMA LISTA COM FILTROS "Usuario, Ação, Data e Hora"
+	

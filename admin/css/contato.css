@@ -1,0 +1,11 @@
+.div_contato_fields { display: block;float: left; }
+.div_contato_fields>div.linha { width: 390px; border: 1px solid #EEE;}
+.div_contato_fields>div.linha>p { display: block;float: left; margin: 0; }
+.div_contato_fields>div.linha>p>label{ display: block; }
+.div_contato_fields>div.linha>p>input[type=text]{ width: 140px;margin-right: 10px;padding: 4px 0 5px 2px; }
+.div_contato_fields>div.linha>p>select{ width: 140px;margin: 2px 10px 0 0;padding: 4px 2px 3px 2px; }
+.div_contato_fields>div.linha>p.div_c1 { width: 160px; }
+.div_contato_fields>div.linha>p.div_c2 { width: 160px; }
+.div_contato_fields>div.linha>p.remover a{ width: 70px; height: 20px; display: block; margin: 19px 5px 0 0; text-align: center; background-color: #fcc;padding: 4px 0 1px 0;text-decoration: none;border: 1px solid #d99;}
+a.add_field_contato { height: 20px; display: block; margin: 19px 5px 0 0; text-align: center; background-color: #cfc;padding: 4px 0 1px 0;text-decoration: none;border: 1px solid #9d9;}
+

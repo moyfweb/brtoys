@@ -1,0 +1,1 @@
+<h2><?php echo "Você está administrando o site $site->URL";?></h2>

@@ -1,0 +1,17 @@
+.grid_view {border-collapse: collapse;}
+.grid_view td,
+.grid_view th
+	{ padding: 2px 5px; border: 1px solid gray; background-color: #fff; color: #555;text-align: left;}
+.grid_view tr.legenda th {background-color: #eef8ee;}
+.grid_view tr.busca th {padding: 0;}
+.grid_view tr.busca th input[type=text]{width: 100%;box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box;border: 1px solid #fff;}
+.grid_view .gray td {background-color: #F4F8FB;color: #333;}
+.grid_view td.actions a{display: block;float:left;margin: 3px 5px;font-weight: bold;}
+.grid_view td.actions a.rm{color: red;}
+.grid_view td.actions a.ed{color: green;}
+.grid_view td.actions a.vw{color: blue;}
+.grid_view td.pagination {margin: 0px;padding: 1px 0;}
+.grid_view td.pagination ul{margin: 2px auto;list-style-type: none;text-align: center;}
+.grid_view td.pagination ul li{display: inline-block;*display: inline;zoom: 1;margin: 0 5px 0 0;}
+
+

@@ -1,0 +1,16 @@
+.div_endereco_fields>.linha { width: 700px; }
+.div_endereco_fields>.linha>p {display: block;float: left;text-align: left;min-width: 210px;padding-right: 10px;margin: 0 0 10px 0;}
+.div_endereco_fields>.linha>p>input[type=text] { display: block;text-align: left; width: 210px; }
+.div_endereco_fields>.linha .Descricao input[type=text]{ width: 666px; }
+.div_endereco_fields>.linha .Logadouro input[type=text]{ width: 438px; }
+.div_endereco_fields>.linha .remover {display: block;width: 680px;}
+.div_endereco_fields>.linha .remover a{ width: 70px; height: 20px; display: block; margin: 19px 5px 0 0; text-align: center; background-color: #fcc;padding: 4px 0 1px 0;text-decoration: none;border: 1px solid #d99;float: right;}
+a.add_field_endereco{ height: 20px; display: block; margin: 19px 5px 0 0; text-align: center; background-color: #cfc;padding: 4px 0 1px 0;text-decoration: none;border: 1px solid #9d9;}
+
+div.endereco {width: 700px; margin-bottom: 20px;}
+div.endereco p {display: block;float: left;text-align: left;width: 210px;border: 1px solid gray;margin: 0 10px 5px 0;padding: 3px 5px;}
+div.endereco p.bairro {width: 210px;}
+div.endereco p.logadouro {width: 442px;}
+div.endereco h3 {display: block;float: left;font-size: 1.1em;border-bottom: 1px solid #ddd;color: #708090;font-weight: normal;width: 680px;}
+div.endereco h4 {display: block;float: left;width: 680px;margin-bottom: 6px;}
+

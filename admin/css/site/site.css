@@ -1,0 +1,5 @@
+#institucional{ margin-bottom: 20px}
+#institucional p {text-indent: 20px;}
+#institucional .box01{display: block;float:left;width: 540px;height: 355px;margin: 10px 0 20px 20px;}
+#institucional .box02{display: block;float:left;width: 340px;margin-left: 25px;}
+#institucional .box02 h2{font-size: 1.3em;color: #444;text-indent: 10px;}

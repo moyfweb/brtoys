@@ -1,0 +1,113 @@
+<?php
+class CTrataString
+{
+	/*
+		limite de caracteres
+	*/
+	public static function limit($texto, $num)
+	{
+		$texto = strip_tags($texto);
+		$texto = str_replace('&nbsp;','',$texto);
+		if(strlen($texto) <= $num)
+			$textoAux = $texto;
+		else
+		{
+			$textoAux = substr($texto,0,$num+1);
+			$pos = strrpos($textoAux," ");
+			if($pos == "")
+				$pos = $num-1;
+			$textoAux = substr($texto,0,$pos) . "...";
+		}
+		return $textoAux;
+	}
+
+	/*
+		sql anti injection
+	*/
+	public static function anti_injection($sql)
+	{
+			// remove palavras que contenham sintaxe sql
+			$sql = preg_replace(sql_regcase("/(from|select|insert|delete|where|drop table|show tables|#|\*|--|\\\\)/"),"",$sql);
+			$sql = trim($sql);//limpa espaços vazio
+			$sql = strip_tags($sql);//tira tags html e php
+			$sql = addslashes($sql);//Adiciona barras invertidas a uma string
+			return $sql;
+	}
+	
+	/*
+		remove acentos no texto
+	*/
+	public static function removeAcento($var)
+	{
+		$var = strtolower($var);
+		$var = preg_replace("[áàâãª]","a",$var);	
+		$var = preg_replace("[éèê]","e",$var);	
+		$var = preg_replace("[óòôõº]","o",$var);	
+		$var = preg_replace("[úùû]","u",$var);
+		$var = preg_replace("[íìî]","i",$var);
+		$var = str_replace("ç","c",$var);
+		return $var;
+	} 
+	/*
+		transfroma acentos para html
+	*/
+	public static function tohtml($string)
+	{
+	  //Vogais com acento agudo
+	  //$string = strtolower ($string);
+	  $string = str_replace("á", "&aacute;", $string);//á
+	  $string = str_replace("Á", "&Aacute;", $string);//Á        
+
+	  $string = str_replace("é", "&eacute;", $string);//é
+	  $string = str_replace("É", "&Eacute;", $string);//É
+	  
+	  $string = str_replace("í", "&iacute;", $string);//í
+	  $string = str_replace("Í", "&Iacute;", $string);//Í
+	  
+	  $string = str_replace("ó", "&oacute;", $string);//ó
+	  $string = str_replace("Ó", "&Oacute;", $string);//Ó
+	  
+	  $string = str_replace("ú", "&uacute;", $string);//ú
+	  $string = str_replace("Ú", "&Uacute;", $string);//Ú
+
+	  //Vagais com acento circunflexo
+	  $string = str_replace("â", "&acirc;", $string);//â
+	  $string = str_replace("Â", "&Acirc;", $string);//Â
+
+	  $string = str_replace("e", "&ecirc;", $string);//ê
+	  $string = str_replace("E", "&Ecirc;", $string);//Ê
+	  
+	  $string = str_replace("î", "&icirc;", $string);//î
+	  $string = str_replace("Î", "&Icirc;", $string);//Î
+	  
+	  $string = str_replace("ô", "&ocirc;", $string);//ô
+	  $string = str_replace("Ô", "&Ocirc;", $string);//Ô
+
+	  $string = str_replace("û", "&ucirc;", $string);//û
+	  $string = str_replace("Û", "&Ucirc;", $string);//Û  
+
+	  //Vogais com "tio"
+	  $string = str_replace("a", "&atilde;", $string);//ã
+	  $string = str_replace("A", "&Atilde;", $string);//Ã
+	  
+	  $string = str_replace("o", "&otilde;", $string);//õ
+	  $string = str_replace("O", "&Otilde;", $string);//Õ
+
+	  //Crase
+	  $string = str_replace("a", "&agrave;", $string);//à
+	  $string = str_replace("A", "&Agrave;", $string);//À
+	  
+	  //Cê-cedilha
+	  $string = str_replace("ç", "&ccedil;", $string);//ç
+	  $string = str_replace("Ç", "&Ccedil;", $string);//Ç
+	 
+	  //Trema
+	  $string = str_replace("ü", "&uuml;", $string);//ü
+	  $string = str_replace("Ü", "&Uuml;", $string);//Ü
+
+	  $string = str_replace("ö", "&ouml;", $string);//ö
+	  $string = str_replace("Ö", "&Ouml;", $string);//Ö
+
+	  return $string;
+	}
+}

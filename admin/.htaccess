@@ -1,0 +1,24 @@
+#php_value error_reporting 7
+php_value error_reporting 30719 
+php_flag display_errors on
+
+#DirectoryIndex teste.html
+
+#RewriteRule home teste.html
+
+
+<IfModule mod_rewrite.c>
+	#AllowOverride All
+	RewriteEngine on
+	
+	# Rewrite keyword-rich URLs 
+	
+	RewriteRule   ^(blog).* - [NC,L]
+	
+	RewriteRule !\.(/imagens/|/arquivos/|/painel/|gif|jpg|jpeg|png|css|js|xml|pdf|swf|json.php|html.php)$ index.php
+	RewriteRule ^imagens/(.*)$ arquivos/$1 [NC]
+	RewriteRule sitemap.xml sitemap.xml
+	
+	RewriteRule sitemap sitemap.xml			
+	
+</IfModule>
